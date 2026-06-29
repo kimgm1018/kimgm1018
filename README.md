@@ -134,8 +134,7 @@ Django REST Framework와 Vue를 활용한 웹서비스 개발을 중심으로,
 
 ## 📊 GitHub Stats
 
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_ID&show_icons=true&theme=default&include_all_commits=true)
-
+![Github stats](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=kimgm1018&theme=default)
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=kimgm1018&layout=compact)
 
 ---
