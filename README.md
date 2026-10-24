@@ -13,6 +13,8 @@ AI부터 백엔드, 배포까지 이것저것 해왔습니다. 처음 맡은 분
 ### 01. [별빛뉴스](https://github.com/kimgm1018/star_news)
 **여러 기사에 흩어진 하나의 사건을 연결하는 뉴스 서비스**
 
+<img src="https://raw.githubusercontent.com/kimgm1018/star_news/master/docs/images/readme/presentation-cover.png" alt="별빛뉴스 프로젝트 대표 이미지" width="720" />
+
 같은 사건을 다룬 기사가 여러 개일 때, 기사마다 따로 읽어야 전체 흐름이 보이는 점에서 출발한 프로젝트입니다. 기사에서 사건과 인물, 기관 등의 관계를 추출해 그래프로 연결하고, 그 관계를 따라 뉴스를 볼 수 있도록 만들었습니다.
 
 저는 주로 **인프라와 배포 환경**을 맡았습니다.
