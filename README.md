@@ -31,6 +31,8 @@ AI부터 백엔드, 배포까지 이것저것 해왔습니다. 처음 맡은 분
 ### 02. [R0-Ki](https://github.com/kimgm1018/RoKi)
 **반복 순찰을 돕는 자율주행 로봇과 관제 서비스**
 
+<img src="https://raw.githubusercontent.com/kimgm1018/RoKi/master/docs/images/readme/roki-main.jpg" alt="R0-Ki 프로젝트 대표 이미지" width="720" />
+
 로봇이 단지를 순찰하면서 이상 상황을 찾고, 관리자는 관제 화면에서 이를 확인하는 프로젝트입니다.
 
 처음에는 객체 탐지와 OCR을 맡았습니다. 번호판처럼 한 번의 인식만으로는 결과가 불안정한 경우가 있어 여러 프레임의 결과를 비교하고 보완하는 작업을 했습니다.
