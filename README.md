@@ -1,145 +1,101 @@
-# 👋 안녕하세요, 김강민입니다.
+# 김강민
 
-웹서비스의 데이터 흐름을 설계하고, AI·추천 시스템을 더해 사용자에게 의미 있는 기능을 만드는 개발자입니다.
+제가 만든 것이 누군가에게 도움이 될 때 가장 뿌듯합니다.
 
-Django REST Framework와 Vue를 활용한 웹서비스 개발을 중심으로,  
-추천 시스템, RAG, LangGraph 기반 챗봇 등 AI 기능을 실제 서비스 흐름에 연결하는 프로젝트를 진행해 왔습니다.
+새로운 기술을 써보는 것도 재미있지만, 그 기술로 불편했던 일을 조금 더 편하게 만들었을 때 기억에 오래 남습니다. 보드게임 추천 화면이 너무 느려서 API를 다시 고쳤던 일도, 로봇이 발견한 상황을 관리자가 바로 확인할 수 있도록 서버 기능을 붙였던 일도 그랬습니다.
 
----
-
-## 🧭 About Me
-
-- Django REST Framework 기반 API 서버 개발 경험
-- Vue3 + Pinia 기반 프론트엔드 연동 경험
-- KNN 기반 추천 시스템 설계 및 서비스 적용 경험
-- LangChain / LangGraph / FAISS 기반 AI 챗봇 및 RAG 실험 경험
-- 인증, CORS, API 병목, 배포, 지도 API 연동 등 실제 개발 과정의 문제 해결 경험
-- AI를 단순 사용 도구가 아니라 개발 생산성과 서비스 기능을 확장하는 도구로 활용하는 데 관심이 있습니다.
+AI부터 백엔드, 배포까지 이것저것 해왔습니다. 처음 맡은 분야가 아니더라도 프로젝트에 필요하면 배우면서 해결하려고 합니다.
 
 ---
 
-## 🛠 Tech Stack
+## Projects
 
-### Backend
-`Python` `Django` `Django REST Framework` `FastAPI`
+### 01. [별빛뉴스](https://github.com/kimgm1018/star_news)
+**여러 기사에 흩어진 하나의 사건을 연결하는 뉴스 서비스**
 
-### Frontend
-`Vue3` `Pinia` `JavaScript` `HTML` `CSS`
+같은 사건을 다룬 기사가 여러 개일 때, 기사마다 따로 읽어야 전체 흐름이 보이는 점에서 출발한 프로젝트입니다. 기사에서 사건과 인물, 기관 등의 관계를 추출해 그래프로 연결하고, 그 관계를 따라 뉴스를 볼 수 있도록 만들었습니다.
 
-### AI / Data
-`LangChain` `LangGraph` `FAISS` `OpenAI API` `scikit-learn` `KNN`
+저는 주로 **인프라와 배포 환경**을 맡았습니다.
 
-### Database / Infra
-`SQLite` `PostgreSQL` `Google Cloud Platform` `AWS SES`
+- Jenkins를 이용한 CI 환경 구성
+- Docker Compose 기반 서비스 실행·배포 환경 구성
+- Spring Boot, FastAPI, 데이터베이스가 함께 동작하는 환경 설정
+- 브랜치 규칙과 협업 과정 정리
 
-### Tools
-`Git` `GitHub` `Postman` `Cursor` `Figma`
+여러 파트에서 만든 코드가 실제 서버에서 하나의 서비스로 돌아가도록 만드는 경험을 했습니다.
 
----
+**SSAFY 팀 프로젝트 최우수상**
 
-## 🚀 Featured Projects
+### 02. [R0-Ki](https://github.com/kimgm1018/RoKi)
+**반복 순찰을 돕는 자율주행 로봇과 관제 서비스**
 
-### 🎲 할래말래 | AI 기반 보드게임 추천 & 커뮤니티 서비스
+로봇이 단지를 순찰하면서 이상 상황을 찾고, 관리자는 관제 화면에서 이를 확인하는 프로젝트입니다.
 
-사용자의 조건과 취향에 맞는 보드게임을 추천하고, 커뮤니티와 매장 정보를 함께 제공하는 웹서비스입니다.
+처음에는 객체 탐지와 OCR을 맡았습니다. 번호판처럼 한 번의 인식만으로는 결과가 불안정한 경우가 있어 여러 프레임의 결과를 비교하고 보완하는 작업을 했습니다.
 
-**주요 기능**
+프로젝트 중간에는 백엔드에도 사람이 필요해 **통계와 AI 파이프라인 관련 API**를 맡았습니다. 탐지 결과를 저장하고 관제 기능에서 사용할 수 있도록 연결하는 작업이었습니다.
 
-- Django REST Framework 기반 API 서버
-- Vue3 + Pinia 기반 프론트엔드
-- KNN 기반 유사 보드게임 추천
-- 인원 / 시간 / 난이도 기반 조건 추천
-- Kakao Map API 기반 매장 위치 조회
-- 리뷰, 찜하기, 커뮤니티 기능
-- AI 챗봇 기반 추천 기능 실험
+4주라는 짧은 기간이었지만 실제 로봇으로 시연까지 마쳤습니다.
 
-**문제 해결 경험**
+**SSAFY 팀 프로젝트 우수상**
 
-- API 호출 구조 개선을 통한 불필요한 요청 감소
-- 추천 모델 학습 피처 정리 및 유사도 추천 품질 개선
-- 지도 API 권한 및 인증 오류 해결
-- 프론트엔드 상태 관리와 백엔드 API 응답 구조 정리
+### 03. 할래말래
+**조건과 취향에 맞는 보드게임을 찾아주는 추천 서비스**
 
-**Tech Stack**  
-`Django` `DRF` `Vue3` `Pinia` `scikit-learn` `Kakao Map API`
+2명이 함께 만든 프로젝트입니다. 데이터 수집부터 KNN 추천 모델, Django API, Vue 화면까지 나눠서 개발했습니다.
 
-> 팀 프로젝트 저장소는 Private으로 관리 중입니다.
+기능을 붙인 뒤 화면이 뜨는 데 약 10초가 걸리는 문제가 있었습니다. 프론트엔드만 손보기보다 API가 어떤 데이터를 몇 번 요청하는지부터 확인했고, **응답 구조를 바꾸고 캐싱을 적용해 1초 이내로 줄였습니다.**
+
+추천이 잘되는 것도 중요하지만, 사용자가 결과를 기다리다 나가버리면 의미가 없다는 걸 느낀 프로젝트였습니다.
+
+*팀 저장소는 비공개입니다.*
 
 ---
 
-### 🧬 PGx Report Automation | 유전자-약물 리포트 자동화
+## Other Work
 
-유전자-약물 상호작용 데이터를 기반으로 환자용 PGx 리포트를 자동 요약하는 실험 프로젝트입니다.
+### SPMED — 유전자·약물 데이터 관련 개발
 
-**주요 내용**
+생소한 분야였지만 필요한 내용을 공부하면서 세 가지 작업을 했습니다.
 
-- JSON 기반 유전자-약물 데이터 처리
-- LangChain 기반 Single / Sequential / RAG / Parallel 체인 비교
-- 위험 약물 누락과 환각 문제를 줄이기 위한 프롬프트 구조 개선
-- 유전자별 위험 약물 그룹화 및 환자 친화적 설명 생성
+- **유전자 변이 판별:** 알고리즘을 개선해 정확도를 약 98% 수준까지 높였습니다.
+- **약물 리포트:** 유전자·약물 정보를 정리해 사람이 읽기 쉬운 리포트로 만드는 기능을 개발했습니다.
+- **AI 챗봇:** 관련 자료를 검색해 질문에 답하고, 문의·예약 과정을 돕는 챗봇을 개발했습니다. ([관련 코드](https://github.com/kimgm1018/chat_bot))
 
-**문제 해결 경험**
+### [커뮤니티 텍스트 분석](https://github.com/kimgm1018/G_every_time_clowl)
 
-- RAG 검색 결과의 문장 유사도 오검출 문제 분석
-- 위험 약물과 비위험 약물 분리 처리 구조 설계
-- 모델 응답 정확도 검증을 위한 케이스 기반 비교
+커뮤니티 게시글 408건과 댓글 7,508개를 수집해 텍스트를 분석하고, 한국어 분류 모델을 적용해 표현 유형을 살펴봤습니다.
 
-**Tech Stack**  
-`Python` `LangChain` `OpenAI API` `FAISS` `Prompt Engineering` `JSON`
+### 멘토링
+
+한 학기 동안 Python과 자료구조, 알고리즘 기초를 멘토링했습니다. 제가 아는 내용을 설명하는 것과 상대가 이해할 수 있게 설명하는 것은 다르다는 걸 배웠습니다.
 
 ---
 
-### 🤖 Company Reservation Chatbot | RAG 기반 문의·예약 챗봇
+## Skills
 
-회사 내부 문서를 기반으로 질의응답을 수행하고, 예약 정보를 수집해 이메일 발송까지 연결하는 챗봇입니다.
+프로젝트에서 직접 사용해 본 기술 위주로 적었습니다.
 
-**주요 기능**
+- **Backend:** Java, Spring Boot, Python, Django REST Framework, FastAPI
+- **AI / Data:** PyTorch, scikit-learn, LangChain, LangGraph, BERT
+- **Database / Infra:** MySQL, PostgreSQL, Neo4j, Docker, Jenkins, Nginx
+- **Frontend:** Vue.js, React, JavaScript
 
-- FAISS 기반 문서 검색 RAG
-- LangGraph 기반 대화 흐름 제어
-- 예약 필수 정보 수집
-- SQLite 기반 대화 / 예약 내역 저장
-- AWS SES를 활용한 이메일 발송
-- FastAPI 기반 테스트 서버 구성
+## These Days
 
-**문제 해결 경험**
-
-- 대화 상태 관리 구조 설계
-- 필수 예약 정보 누락 여부 검증
-- 도구 호출 결과를 State에 반영하는 흐름 구현
-- 로컬 서버와 외부 접속 테스트 환경 구성
-
-**Tech Stack**  
-`Python` `LangGraph` `LangChain` `FAISS` `FastAPI` `SQLite` `AWS SES`
+요즘은 Spring Boot로 서버 구조를 더 깊이 공부하고 있습니다. AI Agent가 여러 도구를 호출하고 작업을 나누는 방식, AI 기능을 실제 서비스에서 안정적으로 운영하는 방법에도 관심이 있습니다.
 
 ---
 
-## 📌 What I Focus On
+## GitHub Stats
 
-- 사용자의 행동 흐름을 고려한 API 설계
-- AI 기능을 실제 서비스 흐름에 자연스럽게 연결하는 방법
-- 단순 구현보다 문제 원인을 추적하고 구조적으로 개선하는 개발
-- 추천 시스템, 챗봇, RAG 등 데이터 기반 기능 고도화
+![GitHub activity](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=kimgm1018&theme=default)
 
----
-
-## 📚 Currently Learning
-
-- Spring Boot 기반 백엔드 구조
-- REST API 설계와 계층형 아키텍처
-- 실제 서비스 운영을 고려한 배포와 인프라
-- AI 기능을 안정적으로 서비스에 연결하는 방식
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=kimgm1018&layout=compact)
 
 ---
 
-## 📊 GitHub Stats
+## Contact
 
-![Github stats](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=kimgm1018&theme=default)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=kimgm1018&layout=compact)
-
----
-
-## 📫 Contact
-
-- GitHub: https://github.com/kimgm1018
+- GitHub: [kimgm1018](https://github.com/kimgm1018)
 - Email: kimgm1018@naver.com
