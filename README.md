@@ -102,4 +102,4 @@ AI부터 백엔드, 배포까지 이것저것 해왔습니다. 처음 맡은 분
 ## Contact
 
 - GitHub: [kimgm1018](https://github.com/kimgm1018)
-- Email: kimgm1018@naver.com
+- Email: kimgm1018.dev@gmail.com
